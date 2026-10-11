@@ -1,0 +1,41 @@
+{
+  "name": "dsh-job-watch",
+  "version": "0.1.0",
+  "description": "DSH Web GUI: attach a long-running job id to the CURRENT conversation and let the sidebar row carry its state — pink while the job runs, green once it finished (come back and analyse), amber when the id cannot be found. Providers are just a shell command plus one regex, so anything that can list what is running (an HPC scheduler, tmux on a bare-metal box, your own CLI) works. Not affiliated with DeepSeek.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "jobs",
+    "hpc",
+    "slurm",
+    "tmux",
+    "sidebar"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.2-alpha.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "SKILL.md"
+  ]
+}

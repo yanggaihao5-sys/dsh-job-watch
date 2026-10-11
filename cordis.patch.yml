@@ -1,0 +1,13 @@
+# dsh-job-watch bundle patch: inserts the plugin row into the web profile roster.
+#
+# Dual-face plugin:
+#   host half    (exports ".")          — job ledger, the per-provider poller, the
+#                                         `job_watch` agent tool, /api/job-watch/*.
+#   browser half (exports "./client")   — paints the sidebar conversation rows.
+#
+# NOTE: keep this row free of `disabled`. This is the *base* layer; the profile
+# patch (~/.dsh/profiles/<profile>/cordis.patch.yml) overrides the row wholesale
+# and is where enable/disable, and the provider list, belong.
+- insert:
+    - id: job-watch
+      name: 'dsh-job-watch'

@@ -1,0 +1,15 @@
+# Build/install noise
+node_modules/
+__pycache__/
+*.pyc
+
+# Local runs of the plugin leave a ledger behind; never publish one.
+job-watch.json
+hpc-watch.json
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
