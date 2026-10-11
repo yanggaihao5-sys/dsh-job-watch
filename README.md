@@ -39,6 +39,16 @@ moment you actually say something in that conversation — and injected context 
 catalogs, runtime snapshots) does not count as "saying something", because that would clear it silently and
 defeat the whole feature.
 
+## Screenshot
+
+![Three tracked conversations, each carrying the running colour on its sidebar row](docs/demo.png)
+
+> A real screenshot of the sidebar: three tracked conversations, each with the **running** bar
+> (`#ec4899`, the exact colour the plugin paints) on the left edge of its row. The conversation titles are
+> covered by a solid block — they are the author's private session names, and the crop is verified pixel by
+> pixel to contain no text at all. No green example appears here simply because no tracked job had finished
+> when the shot was taken; green means "finished, come back and analyse".
+
 ## How it works
 
 | Half | Runs in | Does |

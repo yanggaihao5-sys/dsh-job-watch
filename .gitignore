@@ -7,6 +7,12 @@ __pycache__/
 job-watch.json
 hpc-watch.json
 
+# Raw screenshots of the author's own sidebar: they contain private conversation
+# titles, so they must never enter the repository. docs/demo.png is the covered,
+# verified crop that is safe to publish.
+pic.png
+/docs/raw.png
+
 # Editor / OS
 .DS_Store
 Thumbs.db
